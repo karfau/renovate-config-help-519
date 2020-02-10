@@ -1,3 +1,13 @@
+# depemdencies
+node_modules/
+vendor/
+
+# output of scripts
+/app
+build/
+coverage/
+.jshintrc
+
 # Logs
 logs
 *.log
