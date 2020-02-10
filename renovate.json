@@ -1,5 +1,29 @@
 {
   "extends": [
-    "config:base"
+    "config:base",
+    ":separateMultipleMajorReleases",
+    ":rebaseStalePrs",
+    ":unpublishSafe",
+    ":semanticCommits"
+  ],
+  "masterIssue": true,
+  "masterIssueTitle": "Dependencies Dashboard (Renovate Bot)",
+  "prCreation": "not-pending",
+  "prConcurrentLimit": 1,
+  "packageRules": [
+    {
+      "packageNames": ["node"],
+      "rangeStrategy": "replace"
+    },
+    {
+      "paths": ["package.json"],
+      "packagePatterns": ["@bower_components\/.*"],
+      "enabled": false
+    },
+    {
+      "paths": ["package.json"],
+      "commitMessageSuffix": "[package.json]",
+      "masterIssueApproval": true
+    }
   ]
 }
