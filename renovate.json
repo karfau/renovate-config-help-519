@@ -21,7 +21,7 @@
     },
     {
       "paths": ["+(package.json)"],
-      "commitMessageSuffix": "[+(package.json)",
+      "commitMessageSuffix": "[+(package.json)]",
       "masterIssueApproval": true
     }
   ]
