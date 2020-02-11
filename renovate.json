@@ -16,14 +16,18 @@
       "rangeStrategy": "replace"
     },
     {
-      "paths": ["+(package.json)"],
       "packagePatterns": ["@bower_components\/.*"],
       "enabled": false
     },
     {
       "paths": ["+(package.json)"],
       "commitMessageSuffix": "[+(package.json)",
-      "masterIssueApproval": true
+      "masterIssueApproval": true,
+      "masterIssueTitle": "Angular Dependencies (Renovate)"
+    },
+    {
+      "paths": ["src-react/*"],
+      "commitMessageSuffix": "[src-react]"
     }
   ]
 }
