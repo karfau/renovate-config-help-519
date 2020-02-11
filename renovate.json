@@ -16,13 +16,13 @@
       "rangeStrategy": "replace"
     },
     {
-      "paths": ["package.json"],
+      "paths": ["{package.json}"],
       "packagePatterns": ["@bower_components\/.*"],
       "enabled": false
     },
     {
-      "paths": ["package.json"],
-      "commitMessageSuffix": "[package.json]",
+      "paths": ["{package.json}"],
+      "commitMessageSuffix": "[{package.json}]",
       "masterIssueApproval": true
     }
   ]
