@@ -8,7 +8,6 @@
   ],
   "masterIssue": true,
   "masterIssueTitle": "Dependencies Dashboard (Renovate Bot)",
-  "prCreation": "not-pending",
   "prConcurrentLimit": 1,
   "packageRules": [
     {
